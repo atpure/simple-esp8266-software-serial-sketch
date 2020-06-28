@@ -10,11 +10,11 @@
 
 #include <SoftwareSerial.h>
 
-#define RX_PIN D2 // connect to TXD of module
-#define TX_PIN D1 // connect to RXD of module (logic level 3.3v!)
+#define RX_PIN D5 // connect to TXD of module
+#define TX_PIN D6 // connect to RXD of module (logic level 3.3v!)
 
 
-SoftwareSerial swSer(RX_PIN, TX_PIN, false, 128);
+SoftwareSerial swSer(RX_PIN, TX_PIN);
 
 void setup() {
   Serial.begin(115200);
